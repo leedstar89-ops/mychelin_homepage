@@ -6,16 +6,15 @@ Mychelin(마이슐랭) — "Public Rating → Personal Taste"
 백엔드/DB 없이 **HTML + CSS + JavaScript만** 사용하는 정적 사이트로,
 Cloudflare Pages 무료 호스팅에 바로 배포 가능하며 **간편 로그인(소셜 로그인)** 앱 검수용 공식 홈페이지로 사용됩니다.
 
-## 디자인 시스템 (miralife.app 영감)
+## 디자인 시스템 (MYCHELIN_HOMEPAGE_DESIGN.md 기준)
 
-- **섹션별 번갈아 가는 배경**: 라이트(#faf9f7, #f3f4f5) ↔ 다크(#000000)
-- **글래스모피즘 헤더**: `rgba(40,46,52,0.5)` + `backdrop-filter: blur(40px)`
-- **대형 타이포그래피**: 클램프( clamp ) 기반 반응형, Gilroy 느낌의 Inter 700
-- **필(알약) 버튼**: `border-radius: 9999px`, 높이 48px, 그림자 트랜지션
-- **카드형 피처 그리드**: 24px 라운드, 호버 시 lift + 그림자
-- **넉넉한 여백 시스템**: CSS 변수 기반 `--space-xs` ~ `--space-3xl` (8px ~ 192px)
-- **스크롤 리빌 애니메이션**: IntersectionObserver 기반 CSS-only
-- **접근성**: `prefers-reduced-motion`, `:focus-visible`, 시맨틱 HTML
+- **따뜻한 neutral 팔레트**: 배경 #faf9f7 / #f4f1ed, 잉크 #1f1d1b, 단일 액센트 #d6452b
+- **첫 화면(hero)**: 사용자 제공 이미지(`assets/image/hero-bg.webp`)를 풀블리드 배경으로 사용, 어두운 오버레이로 가독성 확보
+- **타이포그래피 중심**: clamp 기반 반응형, Inter 700, -0.02/-0.03em 타이트 트래킹
+- **편집 스타일 섹션**: 번호형 에디토리얼 로우(01~04), 카드 그리드 대신 1px whisper border 분리선
+- **라이트/다크 섹션 리듬**: 라이트(#faf9f7) ↔ 다크 CTA(#17181c) 교대
+- **모바일 퍼스트**: 390px 기준 가로 스크롤 없음, 모바일에서 CTA만 노출
+- **접근성**: `prefers-reduced-motion`, `:focus-visible`, 시맨틱 HTML, heading hierarchy
 
 ## 파일 구성
 
@@ -29,6 +28,7 @@ robots.txt            전체 허용 + sitemap 위치
 sitemap.xml           4개 페이지 등록
 assets/css/style.css  디자인 시스템 (CSS 변수, 반응형, 애니메이션)
 assets/js/main.js     헤더 스크롤, 스크롤 리빌, 부드러운 스크롤
+assets/image/         히어로 배경 이미지 (hero-bg.webp)
 README.md             이 문서
 build.md              작업 기록
 ```
@@ -96,5 +96,6 @@ Cloudflare Pages는 루트의 `404.html`을 자동으로 사용합니다. 별도
 - Google Fonts `preconnect` + `preload` + `font-display: swap`
 - 시스템 폰트 폴백으로 CLS 최소화
 - CSS-only 애니메이션 (JS 최소화)
-- 이미지 없음 (아이콘은 인라인 SVG)
+- 모바일 네비게이션은 CTA만 노출하고 기능/문의 링크는 숨깁니다 (데스크톱에서 전체 노출)
+- 히어로 배경은 WebP로 최적화(1613KB → 71KB), `background-size: cover` 사용
 - Gzip/Brotli 압축은 Cloudflare가 자동 처리
