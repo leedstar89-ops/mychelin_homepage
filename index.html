@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mychelin 마이슐랭 — 나만의 맛집 기록과 지도</title>
-  <meta name="description" content="Mychelin(마이슐랭)은 방문한 식당을 기록하고 5가지 기준(맛·가격·특별함·분위기·재방문의사)으로 평가하며, 지도에서 관리하고, 팔로우·가보고싶은곳·차단·신고 등 소셜 기능으로 새로운 맛집을 발견하는 서비스입니다. 운영자: 이대규">
+  <meta name="description" content="Mychelin(마이슐랭)은 방문한 식당을 기록하고 맛과 재방문 의사를 중심으로 평가하며(가격 만족도·특별함·분위기 선택), 국내 지도에서 관리하고, 친구의 실제 방문 기록으로 새 맛집을 발견하는 나만의 맛집 기록 서비스입니다. 운영자: 이대규">
   <link rel="canonical" href="https://mychelin.app/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Mychelin 마이슐랭 — Public Rating → Personal Taste">
-  <meta property="og:description" content="방문한 식당을 기록하고, 5가지 기준으로 평가하고, 지도에서 관리하세요. 만 14세 이상.">
+  <meta property="og:description" content="방문한 식당을 기록하고, 맛과 재방문 의사를 중심으로 평가하고, 지도에서 관리하세요. 만 14세 이상.">
   <meta property="og:url" content="https://mychelin.app/">
   <meta property="og:site_name" content="Mychelin">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d6452b'/%3E%3Ctext x='32' y='44' font-family='Inter,Arial,sans-serif' font-size='34' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
@@ -26,7 +26,7 @@
       <nav class="site-nav" aria-label="메인 네비게이션">
         <a href="#features" class="reveal">기능</a>
         <a href="contact.html" class="reveal">문의</a>
-        <a class="nav-cta reveal" href="#login">시작하기</a>
+        <a class="nav-cta reveal" href="#coming-soon">시작하기</a>
       </nav>
     </div>
   </header>
@@ -38,14 +38,13 @@
           <p class="hero-tagline reveal">Public Rating → Personal Taste</p>
           <h1 id="hero-title" class="reveal reveal-delay-1">세상의 평점이 아니라,<br>내 취향으로 식당을 기록하세요</h1>
           <p class="hero-sub reveal reveal-delay-2">
-            방문한 식당을 기록하고, <strong>맛·가격·특별함·분위기·재방문의사 5가지 기준</strong>으로 평가하며,
-            지도에서 관리하는 나만의 맛집 기록 서비스입니다.
+            방문한 식당을 기록하고, <strong>맛과 재방문 의사를 중심으로</strong> 평가하며, 친구들의 실제 방문 기록을 지도에서 발견하는 나만의 맛집 기록 서비스입니다.
           </p>
           <div class="hero-actions reveal reveal-delay-3">
-            <a class="btn btn-primary" href="#login">시작하기</a>
+            <a class="btn btn-primary btn-disabled" href="#coming-soon">시작하기</a>
             <a class="btn btn-ghost" href="#features">기능 살펴보기</a>
           </div>
-          <p class="hero-note reveal reveal-delay-4">만 14세 이상 이용 가능하며, 별도 회원가입 절차가 없습니다.</p>
+          <p class="hero-note reveal reveal-delay-4"><span class="hero-note-text">소셜 로그인 후 간단한 프로필 설정으로 시작합니다.</span></p>
         </div>
       </div>
     </section>
@@ -91,42 +90,71 @@
             <span class="feature-num" aria-hidden="true">01</span>
             <div class="feature-body">
               <h3>식당 기록</h3>
-              <p>날짜, 메뉴, 사진, 짧은 메모와 함께 방문한 식당을 기록합니다. 다시 찾고 싶은 메뉴도 잊지 않아요.</p>
+              <p>방문한 식당을 날짜, 메모, 사진과 함께 기록합니다. 맛과 재방문 의사는 기본으로 기록하고, 가격 만족도·특별함·분위기는 필요할 때 추가합니다. 모든 평가는 0~10점, 0.5단위입니다.</p>
             </div>
           </li>
           <li class="feature-row reveal">
             <span class="feature-num" aria-hidden="true">02</span>
             <div class="feature-body">
-              <h3>나만의 평가</h3>
-              <p>맛 만족도, 가격 만족도, 특별함, 분위기, 재방문의사. 남의 별점 대신 나만의 5가지 기준으로 평가합니다.</p>
+              <h3>홈 피드와 팔로우</h3>
+              <p>닉네임이나 계정ID로 친구를 찾아 팔로우하면, 친구의 새 기록이 홈 피드에 표시됩니다. 좋아요와 댓글로 기록을 나눌 수 있습니다.</p>
             </div>
           </li>
           <li class="feature-row reveal">
             <span class="feature-num" aria-hidden="true">03</span>
             <div class="feature-body">
-              <h3>지도로 보는 기록</h3>
-              <p>기록한 식당이 내 지도 위에 쌓입니다. 어디서 무엇을 먹었는지 한눈에 볼 수 있습니다.</p>
+              <h3>나만의 지도</h3>
+              <p>기록한 식당이 국내 카카오 지도 위에 쌓입니다. 어디서 무엇을 먹었는지 한눈에 볼 수 있고, 가보고 싶은 곳도 지도에 저장합니다.</p>
             </div>
           </li>
           <li class="feature-row reveal">
             <span class="feature-num" aria-hidden="true">04</span>
             <div class="feature-body">
-              <h3>취향 발견</h3>
-              <p>기록이 쌓일수록 어떤 음식과 분위기를 자주 찾는지, 나의 취향이 조금씩 보입니다.</p>
+              <h3>오늘 뭐 먹지</h3>
+              <p>개인 기록과 팔로잉 기반으로 오늘 뭐 먹지 추천을 받을 수 있습니다. 내 취향과 가장 잘 맞는 식당을 찾아보세요.</p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
+    <section class="section" id="social" aria-labelledby="social-title">
+      <div class="container">
+        <div class="split">
+          <div class="split-copy reveal">
+            <p class="kicker">함께하는 맛집</p>
+            <h2 id="social-title" class="section-title">아는 사람의 기록에서<br>새 맛집을 발견합니다</h2>
+          </div>
+          <div class="split-text reveal reveal-delay-1">
+            <p>공개 계정은 누구나 팔로우할 수 있고, 비공개 계정은 신청과 수락 후에 기록을 볼 수 있습니다. 기록 공개 범위는 계정 기본 설정으로 관리됩니다.</p>
+            <p>닉네임이나 계정ID로 친구를 검색하고, 팔로우한 사람의 실제 방문 기록에서 새로운 맛집을 발견합니다. 과장된 순위보다 신뢰할 수 있는 사람들의 기록이 더 정확합니다.</p>
+          </div>
+        </div>
+        <dl class="diff-list reveal">
+          <div class="diff-row">
+            <dt>비공개 계정</dt>
+            <dd>신청·수락 후 열람</dd>
+          </div>
+          <div class="diff-row">
+            <dt>공개 계정</dt>
+            <dd>누구나 팔로우 가능</dd>
+          </div>
+          <div class="diff-row">
+            <dt>기록 공개 범위</dt>
+            <dd>계정 기본 설정으로 관리</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
     <section class="login-section" id="login" aria-labelledby="login-title">
       <div class="container">
-        <h2 id="login-title" class="login-title reveal">나만의 맛집 지도를 시작하세요</h2>
+        <h2 id="login-title" class="login-title reveal">나만의 맛집 지도를 곧 시작하세요</h2>
         <p class="login-desc reveal reveal-delay-1">
-          간편한 로그인으로 나만의 맛집 지도를 시작해보세요.
+          현재 출시 준비 중입니다. 출시 시 소셜 로그인으로 간편하게 시작할 수 있습니다.
         </p>
         <div class="login-actions reveal reveal-delay-2">
-          <a class="btn btn-primary-light" href="#login">시작하기</a>
+          <span class="btn btn-primary-light btn-disabled">출시 준비 중</span>
         </div>
         <p class="login-note reveal reveal-delay-3">
           수집하는 정보와 사용 목적에 대한 자세한 내용은
@@ -143,6 +171,9 @@
       <nav class="footer-nav" aria-label="푸터 네비게이션">
         <a href="privacy-policy.html">개인정보처리방침</a>
         <a href="terms.html">이용약관</a>
+        <a href="account-deletion.html">계정 삭제</a>
+        <a href="community-guidelines.html">커뮤니티 운영정책</a>
+        <a href="support.html">지원</a>
         <a href="contact.html">문의</a>
       </nav>
       <p class="footer-copy">© 2026 Mychelin. 운영자: 이대규. All rights reserved.</p>

@@ -203,6 +203,13 @@ a:hover { color: var(--accent-hover); text-decoration: none; }
   text-decoration: none;
 }
 
+/* Disabled button state (pre-launch CTAs) */
+.btn-disabled {
+  opacity: 0.55;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
 /* Hero — type-first editorial on photo background.
    User requested the hero image (5db30d30 / hero-bg.webp) as a full-bleed
    background. Warm dark overlay keeps text readable; no glass, no gradients

@@ -16,6 +16,21 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://mychelin.app/account-deletion.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://mychelin.app/community-guidelines.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://mychelin.app/support.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://mychelin.app/contact.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
